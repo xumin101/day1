@@ -14,8 +14,8 @@ public class GetController {
 
     @GetMapping("/getParameter")
     public String getPara(@RequestParam String id,@RequestParam String pass){
-        System.out.println("id : " + id);
-        System.out.println("pass : " + pass);
+        System.out.println("id : " + id+", pass : " + pass);
+
         return "getPara 호출";
     }
 
